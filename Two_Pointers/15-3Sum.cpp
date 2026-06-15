@@ -1,3 +1,19 @@
+/*
+    Problem: 15. 3Sum
+    Difficulty: Medium
+    Pattern: Sorting + Two Pointers
+    
+    My notes: 
+    - The problem asks for values, not indices, so we are free to SORT the array first! 
+      Sorting is the secret that makes the Two Pointer approach possible.
+    - We use a standard 'for' loop to lock in our first number (nums[i]).
+    - Once the first number is locked, the problem just becomes "Two Sum II" for the rest of the array. We set 'left' = i + 1 and 'right' = end.
+    - THE HARDEST PART: Avoiding duplicate triplets. 
+      - If nums[i] is the same as the previous number, skip it.
+      - When a valid triplet is found, move 'left' and 'right' past any duplicate numbers before searching again.
+    - Time Complexity: O(N^2) — One loop for 'i', and the pointers scan the rest.
+*/
+
 #include <iostream>
 #include <vector>
 #include <algorithm>
