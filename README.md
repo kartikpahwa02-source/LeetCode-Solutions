@@ -1,2 +1,2 @@
-# LeetCode-Solutions
-My C++ solutions to LeetCode problems
+# DSA-Practice
+My C++ solutions to LeetCode,Hackerrank,GeeksforGeeks problems
